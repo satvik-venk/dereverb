@@ -1,0 +1,612 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+	<div class="container-fluid">
+    <h1>Listening Test Results</h1>
+	<figure>
+	  <img src="box_plot.png" class="img-fluid" alt="Box plot from listening test." width="70%">
+	  <figcaption>16 participants were asked to rate 8 pages of 7 examples each (5 models, a reference and an anchor) --- 4 pages were focused on quality (timbral fidelity and absence of artefacts) and 4 pages were focused on the rejection of interference from remaining sources.</figcaption>
+	</figure>
+	<p>Below are random audio examples used for the listening test.</p>
+	</div>
+
+<!-- Sound examples -->
+
+	<div class="container-fluid">
+	
+	<!-- Sample 05: Vocals -->
+	  <h3>Sample 05: Vocals</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_05_vocals/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 54: Drums -->
+	  <h3>Sample 54: Drums</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_54_drums/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 85: Bass -->
+	  <h3>Sample 85: Bass</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_85_bass/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 34: Other -->
+	  <h3>Sample 34: Other</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_34_other/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+
+<!-- Second round of sound examples -->
+
+	<div class="container-fluid">
+	
+	<!-- Sample 02: Vocals -->
+	  <h3>Sample 02: Vocals</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_02_vocals/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 39: Drums -->
+	  <h3>Sample 39: Drums</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_39_drums/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 14: Bass -->
+	  <h3>Sample 14: Bass</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_14_bass/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+	<!-- Sample 53: Other -->
+	  <h3>Sample 53: Other</h3>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>Mixture (interference anchor)</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Ground Truth</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	
+		<div class="col-sm-3">
+			<h4>Demucs V4</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/demucs_v4.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Demucs V2</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/demucs_v2.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+	  <div class="row">
+		<div class="col-sm-3">
+			<h4>HS-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/hybrid_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Conv-TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/conv_tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		
+		<div class="col-sm-3">
+			<h4>TasNet</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/tasnet.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-3">
+			<h4>Anchor-Quality</h4>
+			<audio controls>
+			<source src="audio_examples/sample_53_other/anchor_quality.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+	  </div>
+
+	<hr style="width:100%;text-align:left;margin-left:0">
+
+
+
+
+
+<!-- The end of audio examples -->
+	</div>
+  </body>
+</html>
