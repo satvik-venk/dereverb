@@ -9,69 +9,250 @@
   </head>
   <body>
 	<div class="container-fluid">
-    <h1>Listening Test Results</h1>
+    <!-- <h1>Supplementary Material</h1> -->
+	<h2>Results on VCTK Demand</h2>
+	<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;}
+		.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+		  overflow:hidden;padding:10px 5px;word-break:normal;}
+		.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+		  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+		.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+		.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+		</style>
+		<table class="tg"><thead>
+		  <tr>
+			<th class="tg-0pky" rowspan="2">Model</th>
+			<th class="tg-0pky" rowspan="2">PESQ</th>
+			<th class="tg-0pky" rowspan="2">CSIG</th>
+			<th class="tg-0pky" rowspan="2">CBAK</th>
+			<th class="tg-0pky" rowspan="2">COVL</th>
+			<th class="tg-0pky">STOI</th>
+			<th class="tg-0pky">Lat.</th>
+		  </tr>
+		  <tr>
+			<th class="tg-0pky">(%)</th>
+			<th class="tg-0pky">(ms)</th>
+		  </tr></thead>
+		<tbody>
+		  <tr>
+			<td class="tg-0pky">Noisy</td>
+			<td class="tg-0pky">1.97</td>
+			<td class="tg-0pky">3.34</td>
+			<td class="tg-0pky">2.44</td>
+			<td class="tg-0pky">2.63</td>
+			<td class="tg-0pky">92.1</td>
+			<td class="tg-0pky">-</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">NSNet2 (Braun et al. 2020)</td>
+			<td class="tg-0pky">2.47</td>
+			<td class="tg-0pky">3.23</td>
+			<td class="tg-0pky">2.99</td>
+			<td class="tg-0pky">2.9</td>
+			<td class="tg-0pky">90.3</td>
+			<td class="tg-0pky">20</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">FullSubNet+ (Chen et al. 2022)</td>
+			<td class="tg-0pky">2.88</td>
+			<td class="tg-0pky">3.86</td>
+			<td class="tg-0pky">3.42</td>
+			<td class="tg-0pky">3.57</td>
+			<td class="tg-0pky">94.0</td>
+			<td class="tg-0pky">32</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">FRCRN (Zhao et al. 2022)</td>
+			<td class="tg-fymr">3.21</td>
+			<td class="tg-0pky">4.26</td>
+			<td class="tg-fymr">3.64</td>
+			<td class="tg-0pky">3.73</td>
+			<td class="tg-0pky">-</td>
+			<td class="tg-0pky">40</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">DeepFilterNet2 (Schroter et al. 2022)</td>
+			<td class="tg-0pky">3.08</td>
+			<td class="tg-0pky">4.3</td>
+			<td class="tg-0pky">3.4</td>
+			<td class="tg-0pky">3.7</td>
+			<td class="tg-0pky">94.3</td>
+			<td class="tg-0pky">40</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">DeepFilterNet3 (Scroter et al. 2023)</td>
+			<td class="tg-0pky">3.17</td>
+			<td class="tg-0pky">4.34</td>
+			<td class="tg-0pky">3.61</td>
+			<td class="tg-0pky">3.77</td>
+			<td class="tg-0pky">94.4</td>
+			<td class="tg-0pky">40</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">DeepFilterNet3*</td>
+			<td class="tg-0pky">3.20</td>
+			<td class="tg-fymr">4.37</td>
+			<td class="tg-0pky">3.56</td>
+			<td class="tg-fymr">3.80</td>
+			<td class="tg-fymr">94.7</td>
+			<td class="tg-0pky">40</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0pky">HSTN-Small*</td>
+			<td class="tg-0pky">3.04</td>
+			<td class="tg-0pky">4.17</td>
+			<td class="tg-0pky">3.53</td>
+			<td class="tg-0pky">3.61</td>
+			<td class="tg-0pky">93.8</td>
+			<td class="tg-0pky">20</td>
+		  </tr>
+		</tbody></table>
+
+	<p>* denotes the models were trained in-house.</p>
+
+	<h3>Window Design for Dereverberation</h3>
+
 	<figure>
-	<iframe src="supplementary_material.pdf" style="width: 100%;height: 100%;border: none"></iframe>
+	<iframe src="supplementary_material.pdf" style="width: 95%;height: 95%;border: none"></iframe>
 	</figure>
-	<p>Below are random audio examples used for the listening test.</p>
+	<p>DNSMOS OVRL, SIG, and BAK scores for the model trained with different dereverberation parameters tested under close and distant
+		microphone scenarios in small and large rooms.</p>
 	</div>
 
 <!-- Sound examples -->
 
 	<div class="container-fluid">
 	
+	<h2>Work in Progress, examples will be added soon. The below are only dummy examples copied from a previous study.</h2>
+
 	<!-- Sample 05: Vocals -->
-	  <h3>Sample 05: Vocals</h3>
+	  <h3>Example 1</h3>
+	  <p> Female voice, T60=1.0s; Distance to mic. is 10 meters</p>
 	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
+		<div class="col-sm-2">
+			<h4>Ground Truth</h4>
+			<audio controls  style="width: 240px;">
 			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+		<div class="col-sm-2">
+			<h4>Noisy and Reverberant</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/demucs_v4.flac" type="audio/flac">
+		</div>
+
+		<div class="row">
+		<div class="col-sm-2">
+			<h4>(0, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/demucs_v2.flac" type="audio/flac">
+		<div class="col-sm-2">
+			<h4>(5, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-2">
+			<h4>(30, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-2">
+			<h4>(50, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		<div class="col-sm-2">
+			<h4>(80, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
 	  </div>
+
 	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/hybrid_tasnet.flac" type="audio/flac">
+		<div class="col-sm-2">
+			<h4>(0, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/conv_tasnet.flac" type="audio/flac">
+		<div class="col-sm-2">
+			<h4>(5, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
+
+		<div class="col-sm-2">
+			<h4>(30, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+		<div class="col-sm-2">
+			<h4>(50, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+		<div class="col-sm-2">
+			<h4>(80, N.D.)</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+	  </div>
+
+	  <!-- new stop -->
+
+
+
+
+	  <div class="row">
+	  <div class="col-sm-3">
+		<h4>(30, N.D.)</h4>
+		<audio controls>
+		<source src="audio_examples/sample_05_vocals/demucs_v4.flac" type="audio/flac">
+		Your browser does not support the audio element.
+		</audio>		
+	</div>
+	
+	<div class="col-sm-3">
+		<h4>(50, N.D.)</h4>
+		<audio controls>
+		<source src="audio_examples/sample_05_vocals/demucs_v2.flac" type="audio/flac">
+		Your browser does not support the audio element.
+		</audio>		
+	</div>
+
 		
 		<div class="col-sm-3">
 			<h4>TasNet</h4>
@@ -88,7 +269,7 @@
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
-	  </div>
+	</div>
 
 	<hr style="width:100%;text-align:left;margin-left:0">
 
