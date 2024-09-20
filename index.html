@@ -111,7 +111,7 @@
 
 	<p>* denotes the models were trained in-house.</p>
 
-	<h3>Window Design for Dereverberation</h3>
+	<h2>Window Design for Dereverberation</h2>
 
 	<figure>
 	<iframe src="supplementary_material.pdf" style="width: 95%;height: 95%;border: none"></iframe>
@@ -123,663 +123,291 @@
 <!-- Sound examples -->
 
 	<div class="container-fluid">
+	<h3>Audio Examples</h3>
+	<p>Examples from the dereverberation grid. [<a href="audio_examples_.pptx">Link</a>]. They are provided as a PPT as there are many examples for each case. Note that these models are trained only on the VCTK Clean Speech dataset.</p>
 	
-	<h2>Work in Progress, examples will be added soon. The below are only dummy examples copied from a previous study.</h2>
+	<h2>Comparison with State-of-the-art</h2>
 
-	<!-- Sample 05: Vocals -->
+	<h3>Audio Examples</h3>
+
+
+	<!-- Example 1 -->
 	  <h3>Example 1</h3>
 	  <p> Female voice, T60=1.0s; Distance to mic. is 10 meters</p>
 	  <div class="row">
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<h4>Ground Truth</h4>
 			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-REF.wav" type="audio/wav">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<h4>Noisy and Reverberant</h4>
 			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1.wav" type="audio/wav">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
+
+		<div class="col-sm-3">
+			<h4>DeepFilterNet3</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1_DeepFilterNet3.wav" type="audio/wav">
+			Your browser does not support the audio element.
+			</audio>		
 		</div>
+
+		<div class="col-sm-3">
+			<h4>DeepFilterNet3-d.m.</h4>
+			<audio controls  style="width: 240px;">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1_031b_dfn_0_300_full_dataset.wav" type="audio/wav">
+			Your browser does not support the audio element.
+			</audio>		
+		</div>
+
+
+	</div>
 
 		<div class="row">
-		<div class="col-sm-2">
-			<h4>(0, N.D.)</h4>
+		<div class="col-sm-3">
+			<h4>NSNet2</h4>
 			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1_NSNet.wav" type="audio/wav">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-2">
-			<h4>(5, N.D.)</h4>
+		<div class="col-sm-3">
+			<h4>FullSubNet+</h4>
 			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1_FSN.wav" type="audio/wav">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
 
-		<div class="col-sm-2">
-			<h4>(30, N.D.)</h4>
+		<div class="col-sm-3">
+			<h4>HS-TasNet-d.m.</h4>
 			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
+			<source src="audio_examples/example_1_normalized/LAUK2_sound_check_female_mic13-16_HPF-1_031_hstn_0_300_full_dataset.wav" type="audio/wav">
 			Your browser does not support the audio element.
 			</audio>		
 		</div>
-
-		<div class="col-sm-2">
-			<h4>(50, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		<div class="col-sm-2">
-			<h4>(80, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
 	  </div>
 
-	  <div class="row">
-		<div class="col-sm-2">
-			<h4>(0, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	<hr style="width:100%;text-align:left;margin-left:0">
 
-		<div class="col-sm-2">
-			<h4>(5, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
 
-		<div class="col-sm-2">
-			<h4>(30, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-2">
-			<h4>(50, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		<div class="col-sm-2">
-			<h4>(80, N.D.)</h4>
-			<audio controls  style="width: 240px;">
-			<source src="audio_examples/sample_05_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
+	<!-- Example 2 -->
+	<h3>Example 2</h3>
+	<p> Male voice, T60=1.0s; Distance to mic. is 4 meters</p>
+	<div class="row">
+	  <div class="col-sm-3">
+		  <h4>Ground Truth</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-REF.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
 
-	  <!-- new stop -->
+	  <div class="col-sm-3">
+		  <h4>Noisy and Reverberant</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2_DeepFilterNet3.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2_031b_dfn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
 
 
-
+  </div>
 
 	  <div class="row">
 	  <div class="col-sm-3">
-		<h4>(30, N.D.)</h4>
-		<audio controls>
-		<source src="audio_examples/sample_05_vocals/demucs_v4.flac" type="audio/flac">
-		Your browser does not support the audio element.
-		</audio>		
-	</div>
-	
-	<div class="col-sm-3">
-		<h4>(50, N.D.)</h4>
-		<audio controls>
-		<source src="audio_examples/sample_05_vocals/demucs_v2.flac" type="audio/flac">
-		Your browser does not support the audio element.
-		</audio>		
-	</div>
+		  <h4>NSNet2</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2_NSNet.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
 
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	  <div class="col-sm-3">
+		  <h4>FullSubNet+</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2_FSN.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
 
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_05_vocals/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	  <div class="col-sm-3">
+		  <h4>HS-TasNet-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_2_normalized/LAUK2_sound_check_male_mic13-16_HPF-2_031_hstn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
 	</div>
 
 	<hr style="width:100%;text-align:left;margin-left:0">
 
-	<!-- Sample 54: Drums -->
-	  <h3>Sample 54: Drums</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
 
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_54_drums/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	<!-- Example 3 -->
+	<h3>Example 3</h3>
+	<p> Female voice, T60=1.0s; Distance to mic. is 4 meters</p>
+	<div class="row">
+	  <div class="col-sm-3">
+		  <h4>Ground Truth</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-REF.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
 
-	<hr style="width:100%;text-align:left;margin-left:0">
-
-	<!-- Sample 85: Bass -->
-	  <h3>Sample 85: Bass</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_85_bass/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	  <div class="col-sm-3">
+		  <h4>Noisy and Reverberant</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
 
-	<hr style="width:100%;text-align:left;margin-left:0">
-
-	<!-- Sample 34: Other -->
-	  <h3>Sample 34: Other</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2_DeepFilterNet3.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
 
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_34_other/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2_031b_dfn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
+
+
+  </div>
+
+	  <div class="row">
+	  <div class="col-sm-3">
+		  <h4>NSNet2</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2_NSNet.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>FullSubNet+</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2_FSN.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>HS-TasNet-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_3_normalized/LAUK2_sound_check_female_mic13-16_HPF-2_031_hstn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+	</div>
+
+
+
 
 	<hr style="width:100%;text-align:left;margin-left:0">
 
 
-<!-- Second round of sound examples -->
-
-	<div class="container-fluid">
-	
-	<!-- Sample 02: Vocals -->
-	  <h3>Sample 02: Vocals</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
+	<!-- Example 4 -->
+	<h3>Example 4</h3>
+	<p> Male voice, T60=1.0s; Distance to mic. is 10 meters</p>
+	<div class="row">
+	  <div class="col-sm-3">
+		  <h4>Ground Truth</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-REF.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
 
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_02_vocals/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+	  <div class="col-sm-3">
+		  <h4>Noisy and Reverberant</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
 	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1_DeepFilterNet3.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>DeepFilterNet3-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1_031b_dfn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+
+  </div>
+
+	  <div class="row">
+	  <div class="col-sm-3">
+		  <h4>NSNet2</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1_NSNet.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>FullSubNet+</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1_FSN.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+
+	  <div class="col-sm-3">
+		  <h4>HS-TasNet-d.m.</h4>
+		  <audio controls  style="width: 240px;">
+		  <source src="audio_examples/example_4_normalized/LAUK2_sound_check_male_mic13-16_HPF-1_031_hstn_0_300_full_dataset.wav" type="audio/wav">
+		  Your browser does not support the audio element.
+		  </audio>		
+	  </div>
+	</div>
 
 	<hr style="width:100%;text-align:left;margin-left:0">
 
-	<!-- Sample 39: Drums -->
-	  <h3>Sample 39: Drums</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
 
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
+
 	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_39_drums/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	  </div>
-
-	<hr style="width:100%;text-align:left;margin-left:0">
-
-	<!-- Sample 14: Bass -->
-	  <h3>Sample 14: Bass</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_14_bass/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	  </div>
-
-	<hr style="width:100%;text-align:left;margin-left:0">
-
-	<!-- Sample 53: Other -->
-	  <h3>Sample 53: Other</h3>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>Mixture (interference anchor)</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/anchor_interference.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Ground Truth</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/ground_truth.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	
-		<div class="col-sm-3">
-			<h4>Demucs V4</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/demucs_v4.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Demucs V2</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/demucs_v2.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-	  </div>
-	  <div class="row">
-		<div class="col-sm-3">
-			<h4>HS-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/hybrid_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Conv-TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/conv_tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-		
-		<div class="col-sm-3">
-			<h4>TasNet</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/tasnet.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-
-		<div class="col-sm-3">
-			<h4>Anchor-Quality</h4>
-			<audio controls>
-			<source src="audio_examples/sample_53_other/anchor_quality.flac" type="audio/flac">
-			Your browser does not support the audio element.
-			</audio>		
-		</div>
-	  </div>
-
 	<hr style="width:100%;text-align:left;margin-left:0">
 
 
